@@ -119,6 +119,7 @@ ul>li {
     text-transform: uppercase;
     padding-top: 3px;
     padding-left: 21px;
+    padding-right: 21px;
     color: #1b1b1b;
     font-size: 24px;
     font-weight: bold;
@@ -180,14 +181,14 @@ ul>li {
     margin-bottom: 18px;
 }
 .btm {
-text-transform: uppercase;
-font-family: var(--titlesFont);
-font-size: 24px;
-padding: 2px 30px;
-background: var(--black);
-color: var(--yellow);
-display: inline-block;
-text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--titlesFont);
+    font-size: 24px;
+    padding: 2px 30px;
+    background: var(--black);
+    color: var(--yellow);
+    display: inline-block;
+    text-decoration: none;
 }
 .btm:hover {
     background-color: var(--red);
@@ -219,7 +220,7 @@ text-decoration: none;
 }
 .products__price--amount {
     color: #fff;
-    transform: rotate(180deg);
+    transform: rotate(181deg);
     display: flex;
     font-size: 30px;
     font-weight: bold;
@@ -233,4 +234,66 @@ text-decoration: none;
 }
 .products__item--color-black .products__price--amount {
     color: var(--black);
+}
+.collections__list {
+    display: flex;
+}
+.collections__item:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 176%;
+    width: 60%;
+    top: -17%;
+    left: -18%;
+    background: center center / contain no-repeat;    
+}
+.collections__item {
+    min-height: 474px;
+    flex: 1;
+    overflow: hidden;
+    margin-right: 30px;
+    background: url(./images/bg/pattern.png) center center / 300px;
+    position: relative;
+}
+.collections__item :last-child {
+    margin-right: 0;
+}
+.collections__link {
+    display: block;
+    padding: 74px 13% 74px 44%;
+    text-decoration: none;
+    color: inherit;
+    font-size: 15px;
+    position: relative;
+    height: 100%;
+    box-sizing: border-box;
+}
+.collections__title {
+    font-family: var(--titlesFont);
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 11px;
+}
+.collections__desc {
+    margin-bottom: 28px;
+}
+.collections__item--type-guys:before {
+    background-image: url(./images/collection/collection_man.png);
+}
+.collections__item--type-girls:before {
+    background-image: url(./images/collection/collection_woman.png);
+    top: -31%;
+    width: 80%;
+    left: -25%;
+}
+.products {
+    margin-bottom: 150px;
+}
+.collections__link:hover .btm {
+    background: var(--red);
+    color: white;
 }

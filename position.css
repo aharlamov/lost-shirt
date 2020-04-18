@@ -45,3 +45,23 @@
     top: -10px;
     right: -10px;
 }
+.sq {
+    width: 200px;
+    height: 200px;
+    background: gray;
+    position: relative;
+}
+.sq1 {
+    width: 50px;
+    height: 50px;
+    background: green;
+    z-index: 2;
+}
+.sq2 {
+    width: 20px;
+    height: 20px;
+    background: yellow;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
